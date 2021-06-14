@@ -19,14 +19,23 @@ body{
     color:white;
 }
 
+/* .m-top-100{
+    margin-top: 100px;
+} */
+
+
+/* ----------------------------- */
+
 header{
     font-weight: 500;
-    height: 75px;
+    font-size: 13px;
+    height: 60px;
     width: 100%;
     background-color: #000;
     position: fixed;
     top:0;
     left:0;
+    margin-bottom: 100px;
 
     justify-content: flex-end;
 }
@@ -34,22 +43,6 @@ header{
 header .fas{
     color:white;
 }
-
-
-
-main{
-    height: calc(200vh - 225px); 
-}
-
-footer{
-    height: 150px;
-    width: 100%;
-    background-color: yellow;
-    position: fixed;
-    bottom:0;
-    left:0;    
-}
-
 
 .speaker-view{
     padding: 5px;
@@ -59,18 +52,49 @@ footer{
     height: 25px; 
 }
 
-
 .speaker-view p{
     padding: 0 5px;
 }
-
-
 
 .expand-arrows{
     padding: 5px;
     margin: 5px 5px;
     border-radius: 5px;
     background-color: rgba(255,255,255,0.3);
-    height: 25px;
-   
+    height: 25px;   
+}
+
+/* ----------------------------- */
+/* MAIN */
+
+main{    
+    height: calc(200vh - 210px); 
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-right: 60px;
+    flex-wrap: wrap;
+
+    align-content: flex-start; 
+}
+
+.container-image{    
+    margin: 3px;
+}
+ 
+.container-image img{
+    object-fit: contain;
+}
+
+
+
+
+
+
+footer{
+    height: 150px;
+    width: 100%;
+    background-color: yellow;
+    position: fixed;
+    bottom:0;
+    left:0;    
 }
