@@ -80,8 +80,8 @@ main{
 }
 
 /* microfono rosso all'Active */
-main .container-image .name-partecipant:active .fas::before{
-    content: "f130";
+main .container-image .name-partecipant:active .fas::before{   
+    content: "\f130";
     color:red;
 }
 /* ------------------- */
