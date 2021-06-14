@@ -19,13 +19,6 @@ body{
     color:white;
 }
 
-.w-200{
-    width: 200px;
-}
-
-.w-1000{
-    width: 1000px;
-}
 
 /* ----------------------------- */
 
@@ -40,7 +33,6 @@ header{
     left:0;
     z-index: 1;
     margin-bottom: 100px;
-
     justify-content: flex-end;
 }
 
@@ -67,19 +59,14 @@ header{
     background-color: rgba(255,255,255,0.3);
     height: 25px;   
 }
-
 /* ----------------------------- */
+
 /* MAIN */
 
 main{    
     height: calc(200vh - 160px); 
     margin: 60px;
-    /* margin-top:60px;
-    margin-left: 60px;
-    margin-right: 60px; */
-    flex-wrap: wrap;
-    /* justify-content:space-around; */
-
+    flex-wrap: wrap; 
     align-content: flex-start; 
 }
 
@@ -92,8 +79,14 @@ main{
     object-fit: contain;
 }
 
-/* NOME IN IMMAGINE PROFILO */
+/* microfono rosso all'Active */
+main .container-image .name-partecipant:active .fas::before{
+    content: "f130";
+    color:red;
+}
+/* ------------------- */
 
+/* NOME IN IMMAGINE PROFILO */
 
 .name-partecipant{
     padding: 5px;
@@ -114,11 +107,12 @@ footer{
     position: fixed;
     bottom:0;
     left:0;    
+    padding: 0 0 0 15px;
    
 }
 
 .footer-container{
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
@@ -126,12 +120,40 @@ footer{
     height: 100px;
     font-size: 12px;
     text-align: center;
-    justify-content: space-around;
+   
+
     align-items: center;
 }
 
 .footer-container .col p{
     margin-top: 8px;
+}
+
+
+.footer-container .left {
+    justify-content: flex-start;
+}
+
+.footer-container .right {
+    justify-content: flex-end;
+}
+
+.footer-container .right:hover{
+    background-color: rgba(126, 121, 121, 0.3);
+}
+
+.footer-container .central {
+    flex-grow: 1;
+    width: 500px;
+    justify-content: center;
+}
+
+.footer-container .central .share-square .fa-share-square{
+  color: rgb(7, 189, 7);
+}
+
+.footer-container .col div{
+    margin:13px;
 }
 
 .fa-microphone,
@@ -147,10 +169,7 @@ footer{
     font-size: 28px;    
 }
 
-.footer-container col:last-child{
-    background-color: rgba(126, 121, 121, 0.3);
-}
-
 .leave-room{
     color: red;
+    padding: 0 15px;
 }
