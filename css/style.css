@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #000;    
+}
+
+/* UTILITIES */
+
+.for-flex{
+    display: flex;
+}
+
+header{
+    height: 75px;
+    width: 100%;
+    background-color: red;
+    position: fixed;
+    top:0;
+    left:0;
+}
+
+main{
+    height: calc(200vh - 225px); 
+}
+
+footer{
+    height: 150px;
+    width: 100%;
+    background-color: yellow;
+    position: fixed;
+    bottom:0;
+    left:0;    
+}
+
+
