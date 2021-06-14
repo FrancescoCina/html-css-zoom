@@ -5,7 +5,8 @@
 }
 
 body{
-    background-color: #000;    
+    background-color: #000; 
+    font-family: 'Lato', sans-serif;
 }
 
 /* UTILITIES */
@@ -14,14 +15,27 @@ body{
     display: flex;
 }
 
+.write-white{
+    color:white;
+}
+
 header{
+    font-weight: 500;
     height: 75px;
     width: 100%;
-    background-color: red;
+    background-color: #000;
     position: fixed;
     top:0;
     left:0;
+
+    justify-content: flex-end;
 }
+
+header .fas{
+    color:white;
+}
+
+
 
 main{
     height: calc(200vh - 225px); 
@@ -37,3 +51,26 @@ footer{
 }
 
 
+.speaker-view{
+    padding: 5px;
+    margin: 5px 5px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 5px;
+    height: 25px; 
+}
+
+
+.speaker-view p{
+    padding: 0 5px;
+}
+
+
+
+.expand-arrows{
+    padding: 5px;
+    margin: 5px 5px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.3);
+    height: 25px;
+   
+}
